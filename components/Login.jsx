@@ -8,7 +8,10 @@ const Login = ({ onLogin }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login Screen</Text>
+      <Text style={styles.title}>Welcome Rescuer</Text>
+
+      {/* Logo Image */}
+      <Image source={require('../assets/images/logo.png')} style={styles.logo} />
 
       {/* Dropdown for selecting unit */}
       <Text style={styles.label}>Select Unit</Text>
@@ -25,8 +28,7 @@ const Login = ({ onLogin }) => {
       {/* Login button */}
       <Button title="Enter" onPress={() => onLogin(selectedUnit)} />
 
-      {/* Logo Image */}
-      <Image source={require('../assets/images/logo.png')} style={styles.logo} />
+     
     </View>
   );
 };
@@ -42,6 +44,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 20,
   },
+
+  logo: {
+    width: 300,
+    height: 300,
+    marginTop: 30, // Adds space between the logo and the button
+    resizeMode: 'contain', // Ensures the logo fits within the specified width/height
+  },
   label: {
     fontSize: 18,
     marginBottom: 10,
@@ -51,12 +60,7 @@ const styles = StyleSheet.create({
     width: 200,
     marginBottom: 20,
   },
-  logo: {
-    width: 150,
-    height: 150,
-    marginTop: 30, // Adds space between the logo and the button
-    resizeMode: 'contain', // Ensures the logo fits within the specified width/height
-  },
+
 });
 
 export default Login;
