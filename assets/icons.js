@@ -8,5 +8,5 @@ export const icons = {
     reports: (props) => <MaterialIcons name="crisis-alert" size={26} {...props} />,
     maps: (props) => <Entypo name="compass" size={26} {...props} />,
     notifications: (props) => <MaterialIcons name="notifications-none" size={26} {...props} />,
-    profile: (props) => <FontAwesome name="user-circle" size={40}   {...props} />, // Added profile icon
+    profile: (props) => <FontAwesome name="user-circle" size={45}   {...props} />, // Added profile icon
 };
