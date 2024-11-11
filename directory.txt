@@ -24,5 +24,3 @@ WatchTower-Rescuer/
 ├── package_lock.json
 ├── package.json
 ├── tsconfig.js
-
-sad
