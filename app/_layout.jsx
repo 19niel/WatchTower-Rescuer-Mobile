@@ -12,7 +12,7 @@ const Layout = () => {
     const ProfileIcon = () => (
         <TouchableOpacity
             style={styles.profileIcon}
-            onPress={() => navigation.navigate('/profile')} // Navigate to '/profile'
+            onPress={() => navigation.navigate('profile')} // Navigate to '/profile'
         >
             {icons.profile({ color: '#000' })}
         </TouchableOpacity>

@@ -69,12 +69,12 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         paddingVertical: 15,
         borderRadius: 25,
-        borderCurve: 'continuous',
+        borderWidth: 2, // Add border width
+        borderColor: 'black', // Set the border color (same as primary color or any color you like)
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 10 },
         shadowRadius: 10,
         shadowOpacity: 0.1,
     },
 });
-
 export default TabBar;
