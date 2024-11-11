@@ -1,9 +1,18 @@
 // Profile.jsx
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { FontAwesome } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';  // Import useRouter from expo-router
 
 const Profile = () => {
+    const router = useRouter();  // Initialize the router
+
+    // Function to handle logout
+    const handleLogout = () => {
+        // Redirect to the Login screen
+        router.push('/login');
+    };
+
     return (
         <View style={styles.container}>
             {/* Profile Title */}
@@ -25,7 +34,7 @@ const Profile = () => {
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonText}>Notification Settings</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={handleLogout}>
                 <Text style={styles.buttonText}>Logout</Text>
             </TouchableOpacity>
         </View>
